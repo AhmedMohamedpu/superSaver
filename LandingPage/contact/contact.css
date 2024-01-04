@@ -1,0 +1,92 @@
+
+body{
+    background-color: #c15151;
+
+}
+
+h1{
+    color: white;
+    font-family: "playfair display";
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+}
+h3{
+    color: white;
+    font-family: "playfair display";
+    font-size: 1.5em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+p{
+    color: white;
+    font-family: "playfair display";
+    font-size: 1em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+  
+.contact{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+a:visited{
+    color:white;
+  }
+
+
+a:link {
+    color: white;
+    text-decoration: none;
+    font-family: "playfair display";
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+/* .click{
+  
+    border-style: solid; 
+    border-radius: 20px;
+    color: white;
+    background-color: blue;
+    width: 10%;
+    height: 50px;
+    margin-top: 10px;
+    
+    
+
+} */
+/* 
+
+  @media (max-width: 600px) {
+    .click{
+      size: 20px;
+    }
+  } */
+
+
+
+
+
+  button{
+   
+    font-size: large;
+    padding: 1% 1% 1% 1%;
+    border-style: solid; 
+    border-radius: 20px;
+    color: beige
+    
+
+  }
+
+
+  .text{
+    color: violet;
+  }
