@@ -4,6 +4,17 @@ body{
 
 }
 
+button{
+   
+  font-size: large;
+  padding: 1% 1% 1% 1%;
+  border-style: solid; 
+  border-radius: 20px;
+  color: beige
+  
+
+}
+
   
 .menu{
     color: blue;

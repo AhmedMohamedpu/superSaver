@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+    font-family: "playfair display";
+}
+
+
+
+h3{
+    text-align: center;
+    font-family: "playfair display";
+   
+}
+
+
+.priceB{
+    /* display: flex;
+    align-items: center; */
+    text-align: center;
+    font-family: "playfair display";
+    text-decoration: line-through;
+    color: grey;
+    
+}
+
+.priceA{
+    /* display: flex;
+    align-items: center; */
+    text-align: center;
+    font-family: "playfair display";
+    color: green;
+    text-decoration: underline;
+    
+}
+
+.images{
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;d */
+
+    display: inline-flex;
+    justify-content: center;
+    
+}
+
+
+.homebut{
+    flex-grow: 1;
+}
+
+
+.buttonh{
+    display: flex;
+    justify-content: flex-start;
+}

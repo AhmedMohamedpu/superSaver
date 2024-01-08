@@ -1,0 +1,19 @@
+  //   for (let i = 0; i < data.length; i++) {
+  //     console.log(data[i].name);
+  //     const nameelement = document.createElement("div");
+  //     nameelement.innerHTML = data[i].name;
+  //     container.appendChild(nameelement);
+  //   }
+  //   for (let j = 0; j < data.length; j++) {
+  //     console.log(data[j].image_url);
+  //     const imageelement = document.createElement("img");
+  //     imageelement.src = data[j].image_url;
+  //     container.appendChild(imageelement);
+  //   }
+  // const childElement = document.createElement("div");
+// childElement.innerHTML = "Hello World";
+
+// container.appendChild(childElement);
+ nameelement.onclick = function () {
+      alert("clicked");
+    };
