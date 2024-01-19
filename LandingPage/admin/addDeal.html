@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>adding a Deal</title>
+    <link rel="stylesheet" href="/reset.css" />
+  </head>
+  <body>
+    <div>
+      <div>
+        <h3>Name</h3>
+        <input type="text" placeholder="Name of product" id="name" />
+      </div>
+      <div>
+        <h3>price before</h3>
+        <input type="text" placeholder="price before" id="priceB" />
+      </div>
+      <div>
+        <h3>price after</h3>
+        <input type="text " placeholder="Price after" id="priceA" />
+      </div>
+      <div>
+        <h3>Deal end date</h3>
+        <input type="date" placeholder="deal Ends" id="dealEnds" />
+      </div>
+      <div>
+        <h3>Image URL</h3>
+        <input type="url" placeholder="Image url" id="imageurl" />
+      </div>
+      <button type="submit" onclick="updatedata()">submit</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="/admin/adddeal.js"></script>
+  </body>
+</html>

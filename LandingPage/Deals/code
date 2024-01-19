@@ -1,19 +1,58 @@
-  //   for (let i = 0; i < data.length; i++) {
-  //     console.log(data[i].name);
-  //     const nameelement = document.createElement("div");
-  //     nameelement.innerHTML = data[i].name;
-  //     container.appendChild(nameelement);
-  //   }
-  //   for (let j = 0; j < data.length; j++) {
-  //     console.log(data[j].image_url);
-  //     const imageelement = document.createElement("img");
-  //     imageelement.src = data[j].image_url;
-  //     container.appendChild(imageelement);
-  //   }
-  // const childElement = document.createElement("div");
-// childElement.innerHTML = "Hello World";
+//   //   for (let i = 0; i < data.length; i++) {
+//   //     console.log(data[i].name);
+//   //     const nameelement = document.createElement("div");
+//   //     nameelement.innerHTML = data[i].name;
+//   //     container.appendChild(nameelement);
+//   //   }
+//   //   for (let j = 0; j < data.length; j++) {
+//   //     console.log(data[j].image_url);
+//   //     const imageelement = document.createElement("img");
+//   //     imageelement.src = data[j].image_url;
+//   //     container.appendChild(imageelement);
+//   //   }
+//   // const childElement = document.createElement("div");
+// // childElement.innerHTML = "Hello World";
 
-// container.appendChild(childElement);
- nameelement.onclick = function () {
-      alert("clicked");
-    };
+// // container.appendChild(childElement);
+//  nameelement.onclick = function () {
+//       alert("clicked");
+//     };
+
+//     async function init() {
+//       const { data, error } = await db.from("deals").select("*");
+//       console.log("xxx", data);
+
+//       for (let i = 0; i < data.length; i++) {
+//         // console.log(data[i].name.image_url);
+//         // const imageelement = document.createElement("img");
+//         // const nameelement = document.createElement("h3");
+//         // imageelement.src = data[i].image_url;
+//         // imageelement.className = "images";
+//         // nameelement.className = "names";
+//         // nameelement.innerHTML = data[i].name;
+//         // container.appendChild(imageelement);
+//         // container.appendChild(nameelement);
+        for (let i = 0; i < data.length; i++) {
+          console.log(data.name);
+          const imageelement = document.createElement("img");
+          const nameelement = document.createElement("h3");
+          const pricebeforeelement = document.createElement("p");
+          const priceafterelement = document.createElement("p");
+
+          imageelement.src = data[i].image_url;
+          nameelement.innerHTML = data[i].name;
+          pricebeforeelement.innerHTML = "price before " + data[i].price_before;
+          priceafterelement.innerHTML = "price After " + data[i].price_after;
+
+          imageelement.className = "images";
+          nameelement.className = "names";
+          pricebeforeelement.className = "priceB";
+          priceafterelement.className = "priceA";
+
+          container.appendChild(imageelement);
+          container.appendChild(nameelement);
+          container.appendChild(pricebeforeelement);
+          container.appendChild(priceafterelement);
+        }
+      }
+    }

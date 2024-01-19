@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="adddealmodal.css" />
+    <script src="adddealmodal.js"></script>
+
+    <title>order infomation</title>
+  </head>
+  <body>
+    <div>
+      <button id="openbut">make deal</button>
+      <dialog id="modal">
+        <h3 id="heading">name deal</h3>
+        <input type="deal name" id="deal" placeholder="deal" />
+        <button id="close">close</button>
+      </dialog>
+
+      <script>
+        let modal = document.getElementById("modal");
+        let openbutton = document.getElementById("openbut");
+        let closebut = document.getElementById("close");
+
+        openbutton.addEventListener("click", () => {
+          modal.showModal();
+        });
+
+        closebut.addEventListener("click", () => {
+          modal.close();
+        });
+      </script>
+    </div>
+  </body>
+</html>
