@@ -1,30 +1,85 @@
-
+.backgr{
+  /* border-color: blue;
+  border-radius: 2px;
+  border: dashed; */
+  height: 25vw;
+  width: auto;
+  background-color: #f90000e3;
+  
+  
+}
 body{
-    background-color: #c15151;
+  text-align: center;
+}
+
+.title{
+  text-align: center;
+}
+.info{
+  text-align: center;
+}
+
+.heroimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10vw;
+  padding: 0vw 15vw;
 
 }
 
-button{
-   
-  font-size: large;
-  padding: 1% 1% 1% 1%;
-  border-style: solid; 
-  border-radius: 20px;
-  color: beige
-  
-
+.texthold{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
 }
 
-  
-.menu{
-    color: blue;
-    align-items: center;
-    text-align: center;
+.herotitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 5vw;
+}
+
+@media screen and (max-width: 500px) {
+.heroimg{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20vw;
+    padding: 0vw 10vw;
+  }
 
-
+.herotitle{
+    padding: 10vw
+  }
+body{
+  text-align: center;
 }
+
+.title{
+  text-align: center;
+}
+.info{
+  text-align: center;
+}
+.texthold{
+  display: inline-block
+}
+  .backgr{
+    height: 200px;
+    width: auto;
+    background-color: #f90000e3;
+  }
+}
+  
+
 
 a:visited{
     color:white;
