@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <title>supersaver menu</title>
   </head>
@@ -21,7 +25,67 @@
       <a href="schedule/time.html">schedule</a>
       <a href="About/about.html">About</a>
     </div>
-  </body>
 
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="/LandingPage/assets/storeimg.png" alt="" class="img" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/LandingPage/assets/storeimg.png" alt="" class="img" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/LandingPage/assets/storeimg.png" alt="" class="img" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/LandingPage/assets/storeimg.png" alt="" class="img" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/LandingPage/assets/storeimg.png" alt="" class="img" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/LandingPage/assets/storeimg.png" alt="" class="img" />
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../package/js/swiper.min.js"></script>
+
+  <script>
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </html>

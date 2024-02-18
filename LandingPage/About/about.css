@@ -14,6 +14,9 @@ body{
 
 .title{
   text-align: center;
+
+  margin: 2vw 0;
+ 
 }
 .info{
   text-align: center;
@@ -43,7 +46,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+color: white;
   padding: 5vw;
 }
 
@@ -76,6 +79,10 @@ body{
     height: 200px;
     width: auto;
     background-color: #f90000e3;
+  }
+  .title{  
+    margin: 4vw 0;
+   
   }
 }
   
